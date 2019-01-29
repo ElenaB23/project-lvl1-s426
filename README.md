@@ -1,5 +1,5 @@
 # project-lvl1-s426
-## 1. Установкой пакета (глобально).
+## 1. Установить пакет (глобально).
 `$ composer global require elena23/braingames`
 
 ## 2. Вызов brain-games как обычной программы.
