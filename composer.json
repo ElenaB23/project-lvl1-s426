@@ -1,0 +1,13 @@
+{
+    "name": "elena23/braingames",
+    "bin": ["bin/brain-games"],
+    "authors": [
+        {
+          "name": "Elena Bardakova",
+          "email": "bardakova.elena95@mail.ru"
+        }
+    ],
+    
+    "require": {},
+    "require-dev": {}
+}
