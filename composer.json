@@ -1,13 +1,16 @@
 {
     "name": "elena23/braingames",
-    "bin": ["bin/brain-games"],
-    "authors": [
+    "description": "hexlet project - brain games",
+    "keywords": ["game", "php"],
+    "type": "library",
+    "license": "MIT",
+        "authors": [
         {
           "name": "Elena Bardakova",
           "email": "bardakova.elena95@mail.ru"
         }
     ],
-    
+    "bin": ["bin/brain-games"],
     "require": {},
     "require-dev": {}
 }
