@@ -2,7 +2,7 @@
     "name": "elena23/braingames",
     "description": "hexlet project - brain games",
     "keywords": ["game"],
-    "type": "library",
+    "type": "project",
     "license": "MIT",
         "authors": [
         {
@@ -11,6 +11,14 @@
         }
     ],
     "bin": ["bin/brain-games"],
-    "require": {},
+    "autoload": {
+        "psr-4": {"BrainGames\\": "src/"},
+        "files": [
+            "src/Cli.php"
+        ]
+    },
+    "require": {
+        "wp-cli/php-cli-tools": "^0.11.11"
+    },
     "require-dev": {}
 }
