@@ -1,7 +1,7 @@
 {
     "name": "elena23/braingames",
     "description": "hexlet project - brain games",
-    "keywords": ["game", "php"],
+    "keywords": ["game"],
     "type": "library",
     "license": "MIT",
         "authors": [
