@@ -10,13 +10,17 @@
           "email": "bardakova.elena95@mail.ru"
         }
     ],
-    "bin": ["bin/brain-games"],
+    "bin": [
+        "bin/brain-games",
+        "bin/brain-even"
+    ],
     "scripts": {
         "phpcs": "phpcs"
     },
     "autoload": {
         "files": [
-            "src/Cli.php"
+            "src/Cli.php",
+            "src/IsEven.php"
         ]
     },
     "require": {
