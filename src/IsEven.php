@@ -7,7 +7,7 @@ use function \cli\prompt;
 function run()
 {
     line('Welcome to the Brain Game!');
-    line('Answer "yes" if number even otherwise answer "no".'. PHP_EOL);
+    line('Answer "yes" if number even otherwise answer "no".' . PHP_EOL);
     $name = prompt('May I have your name?');
     line("Hello, %s!" . PHP_EOL, $name);
 
@@ -21,12 +21,12 @@ function run()
         $answer = prompt("Your answer");
 
         if ($answer == $rightAnswer) {
-          line("Correct!");
-          $round += 1;
+            line("Correct!");
+            $round += 1;
         } else {
-          line("'%s' is wrong answer. Correct answer was '%s'.", $answer, $rightAnswer);
-          line("Let's try again, %s!", $name);
-          exit();
+            line("'%s' is wrong answer. Correct answer was '%s'.", $answer, $rightAnswer);
+            line("Let's try again, %s!", $name);
+            exit();
         }
     }
     line("Congratulations, %s!", $name);
