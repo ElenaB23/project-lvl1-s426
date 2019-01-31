@@ -7,9 +7,9 @@ use function \cli\prompt;
 function run()
 {
     line('Welcome to the Brain Game!');
-    line('Answer "yes" if number even otherwise answer "no".');
+    line('Answer "yes" if number even otherwise answer "no".'. PHP_EOL);
     $name = prompt('May I have your name?');
-    line("Hello, %s!", $name);
+    line("Hello, %s!" . PHP_EOL, $name);
 
     $ROUNDS = 3;
     $round = 0;
