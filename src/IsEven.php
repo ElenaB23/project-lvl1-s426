@@ -4,6 +4,8 @@ namespace BrainGames\IsEven;
 use function \cli\line;
 use function \cli\prompt;
 
+const ROUNDS = 3;
+
 function run()
 {
     line('Welcome to the Brain Game!');
@@ -11,22 +13,18 @@ function run()
     $name = prompt('May I have your name?');
     line("Hello, %s!" . PHP_EOL, $name);
 
-    $ROUNDS = 3;
-    $round = 0;
-
-    while ($round < $ROUNDS) {
-        $number = rand(1, 100);
-        $rightAnswer = isEven($number);
-        line("Question: %d", $number);
+    for ($currentRound = 0; $currentRound < ROUNDS; $currentRound++) {
+        $question = rand(1, 100);
+        $rightAnswer = isEven($question) ? 'yes' : 'no';
+        line("Question: %d", $question);
         $answer = prompt("Your answer");
 
         if ($answer == $rightAnswer) {
             line("Correct!");
-            $round += 1;
         } else {
             line("'%s' is wrong answer. Correct answer was '%s'.", $answer, $rightAnswer);
             line("Let's try again, %s!", $name);
-            exit();
+            return;
         }
     }
     line("Congratulations, %s!", $name);
@@ -34,5 +32,5 @@ function run()
 
 function isEven($number)
 {
-    return $number % 2 === 0 ? 'yes' : 'no';
+    return $number % 2 === 0;
 }
