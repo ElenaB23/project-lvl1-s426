@@ -13,20 +13,11 @@ Welcome to the Brain Games!
 ## 3. Вызов brain-even.
 ```
 $ brain-even
-Welcome to the Brain Game!
-Answer "yes" if number even otherwise answer "no".
-
-May I have your name?: Lena
-Hello, Lena!
-
-Question: 86
-Your answer: yes
-Correct!
-Question: 31
-Your answer: no
-Correct!
-Question: 10
-Your answer: yes
-Correct!
-Congratulations, Lena!
 ```
+<a href="https://asciinema.org/a/224966" target="_blank"><img src="https://asciinema.org/a/224966.svg" /></a>
+
+## 4. Вызов brain-calc.
+```
+$ brain-calc
+```
+<a href="https://asciinema.org/a/224970" target="_blank"><img src="https://asciinema.org/a/224970.svg" /></a>
