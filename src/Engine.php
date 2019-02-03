@@ -1,22 +1,22 @@
 <?php
-namespace BrainGames\IsEven;
+namespace BrainGames\Engine;
 
 use function \cli\line;
 use function \cli\prompt;
 
 const ROUNDS = 3;
 
-function run()
+function gameEngine($rule, $getData)
 {
     line('Welcome to the Brain Game!');
-    line('Answer "yes" if number even otherwise answer "no".' . PHP_EOL);
+    line($rule . PHP_EOL);
     $name = prompt('May I have your name?');
     line("Hello, %s!" . PHP_EOL, $name);
 
     for ($currentRound = 0; $currentRound < ROUNDS; $currentRound++) {
-        $question = rand(1, 100);
-        $rightAnswer = isEven($question) ? 'yes' : 'no';
-        line("Question: %d", $question);
+        [$question, $rightAnswer] = $getData();
+
+        line("Question: %s", $question);
         $answer = prompt("Your answer");
 
         if ($answer == $rightAnswer) {
@@ -28,9 +28,4 @@ function run()
         }
     }
     line("Congratulations, %s!", $name);
-}
-
-function isEven($number)
-{
-    return $number % 2 === 0;
 }
