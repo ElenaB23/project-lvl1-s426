@@ -21,3 +21,9 @@ $ brain-even
 $ brain-calc
 ```
 <a href="https://asciinema.org/a/224970" target="_blank"><img src="https://asciinema.org/a/224970.svg" /></a>
+
+## 5. Вызов brain-gcd.
+```
+$ brain-gcd
+```
+<a href="https://asciinema.org/a/224972" target="_blank"><img src="https://asciinema.org/a/224972.svg" /></a>
