@@ -17,7 +17,9 @@ function run()
 
 function isPrime($number)
 {
-    if ($number < 2) return false;
+    if ($number < 2) {
+        return false;
+    }
     for ($divisor = 2; $divisor <= ceil($number / 2); $divisor++) {
         if ($number % $divisor === 0) {
             return false;
