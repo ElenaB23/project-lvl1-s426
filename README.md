@@ -27,8 +27,15 @@ $ brain-calc
 $ brain-gcd
 ```
 <a href="https://asciinema.org/a/224972" target="_blank"><img src="https://asciinema.org/a/224972.svg" /></a>
+
 ## 6. Вызов brain-progression.
 ```
 $ brain-progression
 ```
 <a href="https://asciinema.org/a/225010" target="_blank"><img src="https://asciinema.org/a/225010.svg" /></a>
+
+## 7. Вызов brain-prime.
+```
+$ brain-prime
+```
+<a href="https://asciinema.org/a/225014" target="_blank"><img src="https://asciinema.org/a/225014.svg" /></a>
