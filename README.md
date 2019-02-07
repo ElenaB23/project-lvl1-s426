@@ -3,8 +3,11 @@
 [![Build Status](https://travis-ci.org/ElenaB23/project-lvl1-s426.svg?branch=master)](https://travis-ci.org/ElenaB23/project-lvl1-s426)
 # project-lvl1-s426
 ## 1. Установить пакет (глобально).
-`$ composer global require elena23/braingames`
+```
+$ composer global require elena23/braingames
 
+$ echo export PATH="$PATH:$HOME/.config/composer/vendor/bin" >> ~/.bashrc
+```
 ## 2. Вызов brain-games как обычной программы.
 ```
 $ brain-games
