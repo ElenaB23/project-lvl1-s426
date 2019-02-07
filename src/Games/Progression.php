@@ -11,22 +11,17 @@ function run()
     $getData = function () {
         $firstElement = rand(1, 20);
         $step = rand(3, 10);
-        $progression[0] = $firstElement;
-        for ($i = 1; $i < SIZE_OF_PROGRESSION; $i++) {
-            $progression[$i] = $progression[$i - 1] + $step;
+        for ($i = 0; $i < SIZE_OF_PROGRESSION; $i++) {
+            $progression[$i] = $firstElement + $step * $i;
         }
         $keyOfHideElem = array_rand($progression);
-
-        $question = hideElem($progression, $keyOfHideElem);
         $rightAnswer = $progression[$keyOfHideElem];
+
+        $progression[$keyOfHideElem] = '..';
+        $question = implode(' ', $progression);
 
         return [$question, $rightAnswer];
     };
 
     gameEngine(RULE, $getData);
-}
-function hideElem($progression, $keyOfHideElem)
-{
-    $progression[$keyOfHideElem] = '..';
-    return implode(' ', $progression);
 }
